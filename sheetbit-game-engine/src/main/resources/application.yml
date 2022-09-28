@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: game-engine
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sheetbit
+    username: sb_games
+    password: sb_games
+    driver-class-name: org.postgresql.Driver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 9090
