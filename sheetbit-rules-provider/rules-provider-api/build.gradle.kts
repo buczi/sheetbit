@@ -17,16 +17,8 @@ repositories {
 }
 
 dependencies {
-//    implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
-//    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation(libs.spring.boot.web)
-    implementation(libs.kotlin.jackson)
-    implementation(libs.kotlin.reflect)
-    implementation(libs.kotlin.stdlib)
-    implementation(platform(libs.spring.cloud))
-    implementation(libs.eureka.client)
-    testImplementation(libs.spring.boot.test)
-//    runtimeOnly("org.postgresql:postgresql")
+    implementation(platform(project(":sheetbit-bom")))
+    implementation(project(":sheetbit-core"))
 }
 
 tasks.withType<KotlinCompile> {
@@ -40,4 +32,4 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-description = "sheetbit-rules-provider"
+description = "rules-provider-api"

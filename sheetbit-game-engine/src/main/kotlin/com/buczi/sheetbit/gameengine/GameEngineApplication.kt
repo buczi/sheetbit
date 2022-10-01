@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Bean
 class GameEngineApplication{
     @Bean
     fun testBean(testFeign: TestFeign): String{
-        val rules = testFeign.getRules()
+//        val rules = testFeign.getRules()
         return "OKI DOKI"
     }
 }

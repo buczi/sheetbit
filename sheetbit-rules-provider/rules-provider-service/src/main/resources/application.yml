@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: rules-provider
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sheetbit
+    username: sb_rules
+    password: sb_rules
+    driver-class-name: org.postgresql.Driver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 10010

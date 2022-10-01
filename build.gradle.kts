@@ -20,11 +20,13 @@ repositories {
 dependencies {
     jacocoAggregation(project(":sheetbit-social-manager"))
     jacocoAggregation(project(":sheetbit-game-engine"))
-    jacocoAggregation(project(":sheetbit-rules-provider"))
+    jacocoAggregation(project(":sheetbit-rules-provider:rules-provider-api"))
+    jacocoAggregation(project(":sheetbit-rules-provider:rules-provider-service"))
     jacocoAggregation(project(":sheetbit-statistic-engine"))
     jacocoAggregation(project(":sheetbit-liquibase"))
     jacocoAggregation(project(":sheetbit-eureka-server"))
     jacocoAggregation(project(":sheetbit-core"))
+    jacocoAggregation(project(":sheetbit-bom"))
 
     implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
