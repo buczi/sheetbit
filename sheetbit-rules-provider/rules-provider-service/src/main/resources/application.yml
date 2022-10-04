@@ -6,6 +6,9 @@ spring:
     username: sb_rules
     password: sb_rules
     driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
 eureka:
   client:
     service-url:
